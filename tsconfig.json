@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNEXT",
+    "esModuleInterop": true,
+    "jsx": "preserve"
+  }
+}
