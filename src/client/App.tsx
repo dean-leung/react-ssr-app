@@ -1,14 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { renderRoutes, RouteConfigComponentProps } from 'react-router-config'
 
-const App: React.FC = () => {
-  const handleClick = () => {
-    console.log('Test Click')
-  }
+const App: React.FC<RouteConfigComponentProps> = ({ route }) => {
 
   return (
     <>
       <h1>Hello React SSR APP!!!</h1>
-      <button onClick={handleClick}>Test Click</button>
+      <main>
+        {route && renderRoutes(route.routes)}
+      </main>
     </>
   )
 }
